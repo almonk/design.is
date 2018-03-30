@@ -1,0 +1,16 @@
+<div class="flex flex-column justify-between pa4 fill-viewport">
+  <div class="flex flex-column">
+    <p class="f2 f1-ns ma0 measure heebo">
+      Design is&hellip;<br/>
+      <span class="o-70">{{randomQuote.text}}</span>
+    </p>
+
+    <a href="{{randomQuote.link}}" target=_blank class="white link sans-serif mt4">
+      {{randomQuote.cite}}
+    </a>
+  </div>
+
+  <div>
+    <button {{action 'shuffleQuotes'}}>Shuffle</button>
+  </div>
+</div>

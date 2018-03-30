@@ -1,0 +1,20 @@
+html,body {
+  -webkit-font-smoothing: antialiased;
+}
+
+.heebo {
+  font-family: 'Heebo', sans-serif;
+}
+
+.fill-viewport {
+  height: 100vh;
+  min-height: 400px;
+}
+
+.bg-1 {
+  background: #C40023;
+}
+
+.bg-2 {
+  background: #E83800;
+}
