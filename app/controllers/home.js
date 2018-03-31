@@ -2,7 +2,13 @@ import Controller from '@ember/controller';
 
 export default Controller.extend ({
   backgroundsAvailable: 13,
-  currentBg: 1,
+
+  currentBg: Ember.computed('', {
+    get() {
+      let bgs = this.get('backgroundsAvailable');
+      return Math.floor (Math.random () * bgs);
+    }
+  }),
 
   // Figures out what the background color class should be
   backgroundColor: Ember.computed('currentBg', {
