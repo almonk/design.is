@@ -51,7 +51,7 @@ export default Route.extend({
       cite: "Paul Rand",
       link: " "
     }, {
-      text: "to devise courses of action aimed at changing existing situations into preferred ones.",
+      text: "to devise courses of action aimed at changing existing situations into preferred ones.",
       cite: "Herbert Simon",
       link: " "
     }, {
