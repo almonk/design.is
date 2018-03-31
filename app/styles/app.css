@@ -6,15 +6,66 @@ html,body {
   font-family: 'Heebo', sans-serif;
 }
 
+.plex {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
 .fill-viewport {
   height: 100vh;
-  min-height: 400px;
+}
+
+.bg {
+  transition: background 0.5s ease;
 }
 
 .bg-1 {
-  background: #C40023;
+  background: #680B70;
 }
 
 .bg-2 {
+  background: #168255;
+}
+
+.bg-3 {
+  background: #0099C9;
+}
+
+.bg-4 {
+  background: #0067C7;
+}
+
+.bg-5 {
+  background: #B20E8E;
+}
+
+.bg-6 {
+  background: #BF0050;
+}
+
+.bg-7 {
   background: #E83800;
+}
+
+.bg-8 {
+  background: #D9930D;
+}
+
+.bg-9 {
+  background: #CFBF38;
+}
+
+.bg-10 {
+  background: #87A82A;
+}
+
+.bg-11 {
+  background: #C40023;
+}
+
+.bg-12 {
+  background: #4A3BA8;
+}
+
+.bg-13 {
+  background: #5E1F8F;
 }

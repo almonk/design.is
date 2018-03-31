@@ -1,16 +1,20 @@
-<div class="flex flex-column justify-between pa4 fill-viewport">
+<div class="flex flex-column pa5 fill-viewport bg {{backgroundColor}}">
   <div class="flex flex-column">
-    <p class="f2 f1-ns ma0 measure heebo">
-      Design is&hellip;<br/>
-      <span class="o-70">{{randomQuote.text}}</span>
+    <p class="f2 f-subheadline-ns lh-solid-ns ma0 measure heebo" id="quote-text">
+      Design is<br/>
+      {{liquid-bind randomQuote.text}}
     </p>
 
-    <a href="{{randomQuote.link}}" target=_blank class="white link sans-serif mt4">
-      {{randomQuote.cite}}
+    <a href="{{randomQuote.link}}" target=_blank class="white plex link sans-serif mt4 f3">
+      &mdash; {{randomQuote.cite}}
     </a>
   </div>
 
+  <div class="flex-auto"></div>
+
   <div>
-    <button {{action 'shuffleQuotes'}}>Shuffle</button>
+    <button {{action 'shuffleQuotes'}} class="bg-transparent br-100 white ba0 plex b--transparent">
+      <img src="https://icon.now.sh/shuffle/48/fff" alt="">
+    </button>
   </div>
 </div>
