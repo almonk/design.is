@@ -4,6 +4,7 @@ export default Controller.extend ({
   backgroundsAvailable: 13,
   currentBg: 1,
 
+  // Figures out what the background color class should be
   backgroundColor: Ember.computed('currentBg', {
     get() {
       let bgs = this.get('backgroundsAvailable');
@@ -16,12 +17,14 @@ export default Controller.extend ({
     }
   }),
 
+  // Builds the class name given the active array index
   getBackgroundClassName: Ember.computed('currentBg', {
     get() {
       return `bg-${this.get('currentBg')}`; 
     }
   }),
 
+  // Get and set random quote
   randomQuote: Ember.computed ('', {
     get () {
       let quotes = this.get ('model');
