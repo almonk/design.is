@@ -1,7 +1,7 @@
 <div class="flex flex-column pa5 fill-viewport bg {{backgroundColor}}">
   <div class="flex flex-column">
     <p class="f2 f-subheadline-ns lh-solid-ns ma0 measure heebo" id="quote-text">
-      Design is<br/>
+      <span class="o-70">Design is</span><br>
       {{liquid-bind randomQuote.text}}
     </p>
 
@@ -12,7 +12,7 @@
 
   <div class="flex-auto"></div>
 
-  <div>
+  <div class="mt3">
     <button {{action 'shuffleQuotes'}} class="bg-transparent br-100 white ba0 plex b--transparent">
       <img src="https://icon.now.sh/shuffle/48/fff" alt="">
     </button>
