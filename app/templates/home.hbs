@@ -1,11 +1,12 @@
 <div class="flex flex-column pa2 pa5-ns fill-viewport bg {{backgroundColor}}">
   <div class="flex flex-column">
+    
     <p class="f2 f-subheadline-ns lh-solid-ns ma0 measure heebo" id="quote-text">
       <span class="o-70">Design is</span><br>
       {{liquid-bind randomQuote.text}}
     </p>
 
-    <a href="{{randomQuote.link}}" target=_blank class="white plex link sans-serif mt4 f3 ttu">
+    <a href="{{randomQuote.link}}" target=_blank class="white plex link sans-serif mt4 f3 ttu" id="cite">
       &mdash; {{randomQuote.cite}}
     </a>
   </div>
